@@ -32,20 +32,22 @@ html, body {
 .selector-style {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
+    justify-content: center;
+    display: flex;
+   align-items: center;
 }
 
 
-.btn_stile_left {
-    margin: 1px;
-    border: 1px solid;
-    border-radius: 5px;
+.btn_grp_style{
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+    margin-top: 75px;
 }
 
-.btn_stile_right{
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+hidediv{
+    visibility: hidden;
+    display: none;
 }
-
 .margin_txt{
     margin: 25px 25px 25px 25px;
     padding: 5px 5px 5px 5px;

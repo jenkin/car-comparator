@@ -1,4 +1,12 @@
 
+let apiUrl = "https://www.carqueryapi.com/api/0.3/?callback=?&cmd=getMakes"
+let paramsString = ''
+let finalUrl = apiUrl + paramsString
+
+$.getJSON(finalUrl, datiArrivati)
+
+console.log("CHIAMATA PARTITA")
+
 function datiArrivati(data) {
     let allMakes = data.Makes,
         countries = allMakes
@@ -63,11 +71,5 @@ function datiArrivati(data) {
 }
 
 //let apiUrl = "https://www.carqueryapi.com/api/0.3/?callback=?&cmd=getModel&model=11459"
-let apiUrl = "https://www.carqueryapi.com/api/0.3/?callback=?&cmd=getMakes"
-let paramsString = ''
-let finalUrl = apiUrl + paramsString
 
-$.getJSON(finalUrl, datiArrivati)
-
-console.log("CHIAMATA PARTITA")
 
